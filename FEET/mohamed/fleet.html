@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <title>SKYORA Airlines | Our Fleet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fleet.css">
+</head>
+<body>
+  <main>
+    <section class="skyora-fleet" id="fleet" aria-labelledby="fleet-title">
+      <div class="container">
+        <div class="fleet-header">
+          <div>
+            <div class="fleet-eyebrow">OUR FLEET · MADE FOR YOUR JOURNEY</div>
+            <h1 class="fleet-title" id="fleet-title">Closer to home.<br>Ready for <span>the world.</span></h1>
+            <p class="fleet-intro">Discover the aircraft behind your next journey. From quick regional trips to long-haul adventures, SKYORA brings comfort, thoughtful design, and an Egyptian-inspired spirit to every flight.</p>
+          </div>
+          <div class="fleet-controls" aria-label="Aircraft carousel controls">
+            <button class="fleet-control" id="fleet-prev" type="button" aria-label="Previous aircraft"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+            <button class="fleet-control" id="fleet-next" type="button" aria-label="Next aircraft"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="fleet-carousel" aria-label="Aircraft carousel" aria-roledescription="carousel" tabindex="0">
+          <article class="fleet-slide is-active" aria-hidden="false">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-stars" aria-hidden="true"></i> Regional favourite</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85" alt="Passenger aircraft flying above the clouds" fetchpriority="high">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Airbus · Short &amp; medium haul</div>
+                  <h2 class="fleet-aircraft-name">Airbus A320</h2>
+                  <p class="fleet-description">A flexible single-aisle aircraft concept for popular regional routes, including sample journeys between Cairo and destinations across the Arab region.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Up to 180</strong><span>Passengers*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-layout-three-columns" aria-hidden="true"></i><strong>Single aisle</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-suitcase2" aria-hidden="true"></i><strong>Cabin space</strong><span>Carry-on storage</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Airbus A320">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-slide" aria-hidden="true">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-globe2" aria-hidden="true"></i> Long-haul comfort</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=1400&q=85" alt="Commercial passenger jet flying in a blue sky" loading="lazy">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Boeing · Long haul</div>
+                  <h2 class="fleet-aircraft-name">Boeing 787</h2>
+                  <p class="fleet-description">A wide-body aircraft concept for longer journeys, designed around a calm cabin atmosphere and passenger comfort across international routes.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Variant based</strong><span>Passenger capacity*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-arrows-angle-expand" aria-hidden="true"></i><strong>Wide body</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-globe2" aria-hidden="true"></i><strong>Long range</strong><span>International travel</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Boeing 787">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-slide" aria-hidden="true">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-gem" aria-hidden="true"></i> Next-generation travel</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1400&q=85" alt="Airliner photographed in flight" loading="lazy">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Airbus · Long haul</div>
+                  <h2 class="fleet-aircraft-name">Airbus A350</h2>
+                  <p class="fleet-description">A next-generation wide-body concept for premium long-distance travel, spacious surroundings, and a refined passenger experience.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Variant based</strong><span>Passenger capacity*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-stars" aria-hidden="true"></i><strong>Wide body</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-globe-americas" aria-hidden="true"></i><strong>Long range</strong><span>International travel</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Airbus A350">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="fleet-bottom">
+            <div class="fleet-pagination" role="group" aria-label="Choose aircraft">
+              <button class="fleet-dot is-active" type="button" data-slide="0" aria-label="Show Airbus A320" aria-pressed="true"></button>
+              <button class="fleet-dot" type="button" data-slide="1" aria-label="Show Boeing 787" aria-pressed="false"></button>
+              <button class="fleet-dot" type="button" data-slide="2" aria-label="Show Airbus A350" aria-pressed="false"></button>
+            </div>
+            <p class="fleet-bottom-note"><i class="bi bi-shield-check" aria-hidden="true"></i> Comfort and care at every altitude</p>
+            <div class="fleet-counter"><strong id="fleet-current">01</strong> / 03</div>
+          </div>
+        </div>
+
+        <div class="fleet-highlights" id="fleet-highlights">
+          <div class="fleet-highlight"><strong>Egypt-inspired</strong><span>A regional airline concept</span></div>
+          <div class="fleet-highlight"><strong>Arab region</strong><span>Sample regional destinations</span></div>
+          <div class="fleet-highlight"><strong>Passenger-first</strong><span>Comfort-led experience</span></div>
+          <div class="fleet-highlight"><strong>One journey</strong><span>Many places to discover</span></div>
+        </div>
+        <p class="fleet-disclaimer">*Aircraft capacities depend on the specific aircraft variant and cabin layout. SKYORA Airlines is a student-project concept. Aircraft and route examples are illustrative, not live schedules, confirmed operating routes, or a real booking service.</p>
+      </div>
+    </section>
+    <div class="fleet-feedback" id="fleet-feedback" role="status" aria-live="polite"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="fleet.js"></script>
+</body>
+</html>
