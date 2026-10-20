@@ -29,7 +29,7 @@ function filterSelection(category) {
 filterSelection("all");
 
 
-// home
+// home-section:
 var hero = document.querySelector(".hero1");
 var btnWeather = document.querySelector(".btnwe");
 btnWeather.addEventListener("click", function (e) {
@@ -39,7 +39,7 @@ btnWeather.addEventListener("click", function (e) {
 
 
 
-// offers section
+// offers-section:
 document.addEventListener("DOMContentLoaded", function () {
 
     // Book Now buttons
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// travel
+// travel-section:
 const moreCards=document.getElementById('moreCards');
 const viewMoreBtn=document.getElementById('viewMoreBtn');
 moreCards.addEventListener('show.bs.collapse',function(){
@@ -120,7 +120,7 @@ moreCards.addEventListener('hidden.bs.collapse',function(){
 
 
 
-// footer section
+// footer-section:
 const newsletterForm = document.getElementById('newsletterForm');
 const newsletterEmail = document.getElementById('newsletterEmail');
 const formMessage = document.getElementById('formMessage');
