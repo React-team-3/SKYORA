@@ -1,0 +1,1 @@
+document.querySelector(".btn3").onclick = () => weat.classList.toggle("show");
