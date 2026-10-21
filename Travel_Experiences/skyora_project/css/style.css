@@ -1,31 +1,39 @@
-body {
-    font-family: "Poppins", "Segoe UI", sans-serif;
+body{
     background-color: #f4f6fb;
 }
-#travel-experience {
+#travel-experience{
     padding: 80px 0;
 }
-.travel-label {
-    display: block;
+.travel-label{
+    display:block;
     color: #e0a030;
     font-weight: 600;
     margin-bottom: 12px;
 }
-
-.travel-content h2 {
+.travel-content h2{
     color: #1b2a5c;
     font-weight: 800;
     font-size: 42px;
     line-height: 1.15;
     margin-bottom: 16px;
 }
-
-.travel-description {
+.services-item h3{
     color: #1b2a5c;
-    max-width: 380px;
-    margin-bottom: 32px;
+    font-size:16px;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
-.services-icon {
+.services-item p{
+   color: #1b2a5c;
+   font-size: 13.6px;
+   margin: 0;
+}
+.travel-description{
+   color: #1b2a5c;
+   width: 380PX;
+   margin-bottom: 32px;
+}
+.services-icon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -35,29 +43,18 @@ body {
     background-color: #ecebeb;
     color: #1b2a5c;
     font-size: 19px;
-    box-shadow: 0 2px 8px rgba(27, 42, 92, 0.12);
+    box-shadow: 0 2px 8px rgba(27, 42, 92, 0.2);
     margin-bottom: 10px;
+    transition: all 0.7s;
 }
 .services-icon:hover{
-    background-color: #283a77; 
     color: #f0f0f0;
+    background-color: #1b2a5c;
 }
-.services-item h3 {
-    color: #1b2a5c;
-    font-size:16px;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.services-item p {
-    color: #1b2a5c;
-    font-size: 13.6px;
-    margin: 0;
-}
-.btn-view-more {
+.btn-view-more{
     display: inline-block;
-    background-color: #e0a030;
     color: #fff;
+    background-color: #e0a030;
     font-weight: 600;
     text-decoration: none;
     border-radius: 30px;
@@ -65,9 +62,9 @@ body {
     margin-top: 32px;
     transition: background-color 0.2s;
 }
-.btn-view-more:hover {
-    background-color: #c98d22;
-    color: #fff;
+.btn-view-more:hover{
+    color:#fff;
+    background-color:#c98d22;
 }
 .gallery-card {
     position: relative;
@@ -77,18 +74,18 @@ body {
     overflow: hidden;
     background-color: #1b2a5c;
 }
-.gallery-card img {
+.gallery-card img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
     border-radius: 5px;
-    transition: transform 0.4s;
-    cursor: pointer;
+    transition: transform 0.5s;
+    cursor: pointer; 
 }
-.gallery-card:hover img {
+.gallery-card:hover img{
     transform: scale(1.06);
 }
-.gallery-card figcaption {
+.gallery-card figcaption{
     position: absolute;
     left: 0;
     right: 0;
@@ -97,18 +94,10 @@ body {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-    background: linear-gradient(to top, rgba(27, 42, 92, 0.95), rgba(27, 42, 92, 0.75));
+    background: linear-gradient(to top,rgba(27, 42, 92, 0.95),rgba(27, 42, 92, 0.75));
 }
-.gallery-card figcaption i {
-    margin-right: 8px;
-}
-@media (max-width: 767px) {
-    .travel-content h2 {
-        font-size: 32px;
-    }
-    .gallery-card {
-        height: 180px;
-    }
+.gallery-card figcaption i{
+    margin-right:8px ;
 }
 #testimonials{
     padding: 80px 0;
@@ -144,7 +133,7 @@ body {
     padding: 20px 0;
 }
 .testimonial-card{
-    max-width: 600px;
+    width: 600px;
     background-color: #fff;
     border: 1px solid #e0a030;
     box-shadow: 0 8px 8px rgba(224,160,48,0.25);
@@ -155,7 +144,7 @@ body {
 }
 .testimonial-card .card-text{
     color: #4a5268;
-    line-height: 1.7;s
+    line-height: 1.7;
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -198,17 +187,8 @@ body {
     transform: scale(1.3);
 }
 @media (max-width:767px){
-    .testimonials-header h2 {
-        font-size: 1.8rem;
-    }
     .carousel-control-prev,
     .carousel-control-next {
         display: none;  
     }
 }
-
-
-
-
-
-
