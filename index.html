@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SKYORA | Explore Destinations</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="fonta wesome/css/all.min.css" -->
+</head>
+
+<body>
+
+    <section class="destinations">
+
+        <div class="container-fluid ">
+
+            <div class="d-flex justify-content-between flex-wrap p-3 align-items-center">
+                <div>
+                    <h2 class="section_title">Explore Our DESTINATIONS</h2>
+
+                    <p class="section_content">
+                       Discover amazing places around the world with SKYORA.
+                    </p>
+                </div>
+                <div id="btn_container" class="d-flex flex-nowrap justify-content-center gap-1">
+                    <button class="btn-filter btn active" onclick="myFunction('all')">ALL</button>
+                    <button class="btn-filter" onclick="myFunction('europe')">EUROPE</button>
+                    <button class="btn-filter" onclick="myFunction('asia')">ASIA</button>
+                    <button class="btn-filter" onclick="myFunction('africa')">AFRICA</button>
+                </div>
+            </div>
+            
+
+            <div class="row g-4">
+
+                <!-- Cairo Card -->
+                <div class="filterDiv africa col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/cairo.jpeg" alt="Cairo">
+                        <h3 >Cairo</h3>
+                        <p>Discover the magic of ancient Egypt.</p>
+                        <h5>Starting from<span> $180</span></h5>
+                         <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#cairo-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="cairo-info">
+                            <h5>Top Attractions</h5>
+                            <p>Pyramids of Giza, Egyptian Museum, Khan El Khalili.</p>
+                             <h5>Things To Do</h5>
+                             <p>Explore ancient history, enjoy Nile cruises, and discover local markets.</p>
+                              <h5>Recommended Stay</h5>
+                              <p> 3-4 Days</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paris Card -->
+                <div class="filterDiv europe col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/paris.jpeg" alt="Paris">
+                        <h3>Paris</h3>
+                        <p>Fall in love with every moment.</p>
+                        <h5>Starting from<span> $520</span></h5>
+                        <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#paris-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="paris-info">
+                            <h5>Top Attractions</h5>
+                            <p>Eiffel Tower, Louvre Museum, Notre-Dame Cathedral.</p>
+                            <h5>Things To Do</h5>
+                            <p>Explore art museum, enjoy french cafes, and cruise along the seine River.</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 3-5 Days.</p>
+                        </div>
+                    </div>
+                </div>
+
+                         <!-- Dobai Card -->
+                 <div class="filterDiv asia col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/dopai.jpeg" alt="dobai">
+                        <h3>Dobai</h3>
+                        <p>Where luxury meets adventure.</p>
+                        <h5>Starting from <span>$450</span></h5>
+                         <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#dopai-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="dopai-info">
+                            <h5>Top Attractions</h5>
+                            <p>Burj Khalifa, Dubai Marina, Palm Jumeirah.</p>
+                            <h5>Things To Do</h5>
+                            <p>Enjoy desert safaris, luxury shopping, and breathtaking city views</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 3-5 Days</p>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Rome Card -->
+                 <div class="filterDiv europe col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/rome.jpeg" alt="rome">
+                        <h3>Rome</h3>
+                        <p>A timeless journy through history.</p>
+                        <h5> Starting from <span>$480</span></h5>
+                        <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#rome-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="rome-info">
+                            <h5>Top Attractions</h5>
+                            <p>COlosseum, Travi Fountain, Vatican Museums.</p>
+                            <h5>Things To Do</h5>
+                            <p>Discover ancient ruins, taste authentic italian food, and Explore</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 3-4 Days.</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- London Card -->
+                 <div class="filterDiv europe col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/london.jpeg" alt="london">
+                        <h3>London</h3>
+                        <p>Where tradition meets modern life.</p>
+                        <h5> Starting from <span> $550</span></h5>
+                         <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#london-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="london-info">
+                            <h5>Top Attractions</h5>
+                            <p>Big Ben, Tower Bridge, Bukingham place.</p>
+                            <h5>Things To Do</h5>
+                            <p>Visit royal landmarker, Explore famous museum.</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 3-4 Days.</p>
+                        </div>
+                    </div>
+                </div>
+                        <!-- Tokyo Card -->
+                 <div class="filterDiv asia col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <img src="images/tokyo.jpeg" alt="tokyo">
+                        <h3>Tokyo</h3>
+                        <p>Experience a world of endless wonders.</p>
+                        <h5> Starting from <span> $650</span></h5>
+                         <button class="btn btn-dark book-btn"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#tokyo-info"
+                        >Explor More</button>
+                        <div class="collapse mt-3" id="tokyo-info">
+                            <h5>Top Attractions</h5>
+                            <p>Tokyo Tower, Shibuya Crossing, Senso-ji Temple.</p>
+                            <h5>Things To Do</h5>
+                            <p>Experience Japanese culture, explore anime shops, and taste authentic Japanese cuisine.</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 4-6 Days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
