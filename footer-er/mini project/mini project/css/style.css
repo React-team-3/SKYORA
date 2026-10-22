@@ -1,12 +1,6 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+ html, body {
+  margin: 0;
 }
 
 .newsletter-section {
@@ -107,4 +101,18 @@ body {
 .social-icon:hover {
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+.skyora-footer nav {
+  display: block;
+}
+
+.skyora-footer nav ul {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.skyora-footer nav ul li {
+  display: block;
 }

@@ -6,15 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SKYORA | Explore Destinations</title>
-
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    
+    
+    <link rel="stylesheet" href="offers/Sokaryoffers/css/bootstrap.min.css">
+    <link rel="stylesheet" href="offers/Sokaryoffers/css/all.min.css">
+    <link rel="stylesheet" href="HOMEE/JAVASCRIPT 5/in-sty.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonta wesome/css/all.min.css"
-</head>
+    <link rel="stylesheet" href="offers/Sokaryoffers/css/offers.css">
+    <link rel="stylesheet" href="FEET/mohamed/fleet.css">
+    <link rel="stylesheet" href="Travel_Experiences/skyora_project/css/style.css">
+    <link rel="stylesheet" href="footer-er/mini project/mini project/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+  </head>
 
-<body>
+<body >
+    <header id="head">
+        <nav>
+            <div class="logo">
+                <img src="HOMEE/JAVASCRIPT%205/img/logo.png" alt="SKYORA Logo">
+                <h3>SKYORA</h3>
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-btn">☰</label>
+            <ul>
+                <li>
+                    <a href="#hero">Home</a>
+                </li>
+                <li>
+                    <a href="#destinations">Destinations</a>
+                </li>
+                <li>
+                    <a href="#offers">Offers</a>
+                </li>
+                <li>
+                    <a href="#fleet">Fleets</a>
+                </li>
+                <li>
+                    <a href="#travel-experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button class="btn1">Book a Flight →</button>
+        </nav>
+    </header>
 
-    <section class="destinations">
+    <section id="hero">
+        <h1>DISCOVER THE WORLD<br>
+            ONE FLIGHT AT A TIME</h1>
+        <p>Experience premium comfort seamless journeys and <br> unforgettable views. Where will you fly next</p>
+        <div>
+            <button class="btn2">
+                <i class="fa-solid fa-plane"></i>
+                <span>Live Flights</span>
+            </button>
+            <button class="btn3">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span>Weather</span>
+            </button>
+        </div>
+        <div id="weat">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <div>
+                <h2>24°C</h2>
+                <p>Partly Cloudy</p>
+            </div>
+        </div>
+        <div id="icons">
+            <div class="hero1">
+                <div class="ic1">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <div class="in1">
+                    <h3>Premium Comfort <br> Lie-flat seats</h3>
+                </div>
+            </div>
+            <div class="hero2">
+                <div class="ic2">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <div class="in2">
+                    <h3>Exquisite Dining <br> Delicious meals onboard</h3>
+                </div>
+            </div>
+            <div class="hero3">
+                <div class="ic3">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="in3">
+                    <h3>Peace of Mind <br> Safe, worry-free travel</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="destinations"   id="destinations">
 
         <div class="container ">
 
@@ -23,7 +113,7 @@
                     <h2 class="section_title">Explore Our DESTINATIONS</h2>
 
                     <p class="section_suptitle">
-                       Discover amazing places around the world with SKYORA.
+                        Discover amazing places around the world with SKYORA.
                     </p>
                 </div>
                 <div id="btn_container" class="d-flex flex-nowrap justify-content-center gap-1">
@@ -33,43 +123,39 @@
                     <button class="btn-filter" onclick="filterSelection('africa')">AFRICA</button>
                 </div>
             </div>
-            
+
 
             <div class="row g-4">
 
-                <!-- Cairo Card -->
+                
                 <div class="filterDiv africa col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/cairo.jpeg" alt="Cairo">
-                        <h3 >Cairo</h3>
+                        <img src="cairo.jpeg" alt="Cairo">
+                        <h3>Cairo</h3>
                         <p>Discover the magic of ancient Egypt.</p>
                         <h5>Starting from<span> $180</span></h5>
-                         <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#cairo-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#cairo-info">Explor More</button>
                         <div class="collapse mt-3" id="cairo-info">
                             <h5>Top Attractions</h5>
                             <p>Pyramids of Giza, Egyptian Museum, Khan El Khalili.</p>
-                             <h5>Things To Do</h5>
-                             <p>Explore ancient history, enjoy Nile cruises, and discover local markets.</p>
-                              <h5>Recommended Stay</h5>
-                              <p> 3-4 Days</p>
+                            <h5>Things To Do</h5>
+                            <p>Explore ancient history, enjoy Nile cruises, and discover local markets.</p>
+                            <h5>Recommended Stay</h5>
+                            <p> 3-4 Days</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Paris Card -->
+                
                 <div class="filterDiv europe col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/paris.jpeg" alt="Paris">
+                        <img src="paris.jpeg" alt="Paris">
                         <h3>Paris</h3>
                         <p>Fall in love with every moment.</p>
                         <h5>Starting from<span> $520</span></h5>
-                        <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#paris-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#paris-info">Explor More</button>
                         <div class="collapse mt-3" id="paris-info">
                             <h5>Top Attractions</h5>
                             <p>Eiffel Tower, Louvre Museum, Notre-Dame Cathedral.</p>
@@ -81,17 +167,15 @@
                     </div>
                 </div>
 
-                         <!-- Dobai Card -->
-                 <div class="filterDiv asia col-md-6 col-lg-4">
+                
+                <div class="filterDiv asia col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/dopai.jpeg" alt="dobai">
+                        <img src="dopai.jpeg" alt="dobai">
                         <h3>Dobai</h3>
                         <p>Where luxury meets adventure.</p>
                         <h5>Starting from <span>$450</span></h5>
-                         <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#dopai-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#dopai-info">Explor More</button>
                         <div class="collapse mt-3" id="dopai-info">
                             <h5>Top Attractions</h5>
                             <p>Burj Khalifa, Dubai Marina, Palm Jumeirah.</p>
@@ -102,17 +186,15 @@
                         </div>
                     </div>
                 </div>
-                   <!-- Rome Card -->
-                 <div class="filterDiv europe col-md-6 col-lg-4">
+                
+                <div class="filterDiv europe col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/rome.jpeg" alt="rome">
+                        <img src="rome.jpeg" alt="rome">
                         <h3>Rome</h3>
                         <p>A timeless journy through history.</p>
                         <h5> Starting from <span>$480</span></h5>
-                        <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#rome-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#rome-info">Explor More</button>
                         <div class="collapse mt-3" id="rome-info">
                             <h5>Top Attractions</h5>
                             <p>COlosseum, Travi Fountain, Vatican Museums.</p>
@@ -123,17 +205,15 @@
                         </div>
                     </div>
                 </div>
-                  <!-- London Card -->
-                 <div class="filterDiv europe col-md-6 col-lg-4">
+                
+                <div class="filterDiv europe col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/london.jpeg" alt="london">
+                        <img src="london.jpeg" alt="london">
                         <h3>London</h3>
                         <p>Where tradition meets modern life.</p>
                         <h5> Starting from <span> $550</span></h5>
-                         <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#london-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#london-info">Explor More</button>
                         <div class="collapse mt-3" id="london-info">
                             <h5>Top Attractions</h5>
                             <p>Big Ben, Tower Bridge, Bukingham place.</p>
@@ -144,22 +224,21 @@
                         </div>
                     </div>
                 </div>
-                        <!-- Tokyo Card -->
-                 <div class="filterDiv asia col-md-6 col-lg-4">
+              
+                <div class="filterDiv asia col-md-6 col-lg-4">
                     <div class="card p-3">
-                        <img src="images/tokyo.jpeg" alt="tokyo">
+                        <img src="tokyo.jpeg" alt="tokyo">
                         <h3>Tokyo</h3>
                         <p>Experience a world of endless wonders.</p>
                         <h5> Starting from <span> $650</span></h5>
-                         <button class="btn btn-dark book-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#tokyo-info"
-                        >Explor More</button>
+                        <button class="btn btn-dark book-btn" data-bs-toggle="collapse"
+                            data-bs-target="#tokyo-info">Explor More</button>
                         <div class="collapse mt-3" id="tokyo-info">
                             <h5>Top Attractions</h5>
                             <p>Tokyo Tower, Shibuya Crossing, Senso-ji Temple.</p>
                             <h5>Things To Do</h5>
-                            <p>Experience Japanese culture, explore anime shops, and taste authentic Japanese cuisine.</p>
+                            <p>Experience Japanese culture, explore anime shops, and taste authentic Japanese cuisine.
+                            </p>
                             <h5>Recommended Stay</h5>
                             <p> 4-6 Days.</p>
                         </div>
@@ -168,10 +247,662 @@
             </div>
 
         </div>
-
-
     </section>
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+
+    <section class="offers-section" id="offers">
+        <div class="container">
+
+            <h2>Special Offers</h2>
+            <p>Discover amazing destinations at unforgettable prices.</p>
+
+            
+            <div class="countdown-box">
+                <p>Limited-Time Offers End In</p>
+
+                <div class="countdown-timer">
+                    <div>
+                        <span id="days">07</span>
+                        <small>Days</small>
+                    </div>
+
+                    <div>
+                        <span id="hours">00</span>
+                        <small>Hours</small>
+                    </div>
+
+                    <div>
+                        <span id="minutes">00</span>
+                        <small>Minutes</small>
+                    </div>
+
+                    <div>
+                        <span id="seconds">00</span>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row g-4" id="offers-container">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                            alt="Tropical beach"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">30% OFF</span>
+                            <h3>Summer Escape</h3>
+                            <p>Enjoy a relaxing summer getaway with special fares.</p>
+                            <button class="offer-btn" data-offer="Summer Escape">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                            alt="Paris city view"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">25% OFF</span>
+                            <h3>Weekend in Paris</h3>
+                            <p>Discover the charm of Paris with our weekend deal.</p>
+                            <button class="offer-btn" data-offer="Weekend in Paris">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80"
+                            alt="Family travelling together"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">20% OFF</span>
+                            <h3>Family Journey</h3>
+                            <p>Make beautiful memories with a family trip.</p>
+                            <button class="offer-btn" data-offer="Family Journey">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
+                            alt="Traditional streets in Japan"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">25% OFF</span>
+                            <h3>Tokyo Adventure</h3>
+                            <p>Explore Japanese culture and vibrant city life.</p>
+                            <button class="offer-btn" data-offer="Tokyo Adventure">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                            alt="Beautiful lake and mountains"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">20% OFF</span>
+                            <h3>Early Bird Special</h3>
+                            <p>Plan ahead and save more on your next journey.</p>
+                            <button class="offer-btn" data-offer="Early Bird Special">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80"
+                            alt="Singapore city skyline"
+                        >
+                        <div class="offer-content">
+                            <span class="offer-discount">15% OFF</span>
+                            <h3>Singapore Deal</h3>
+                            <p>Experience a modern city full of exciting attractions.</p>
+                            <button class="offer-btn" data-offer="Singapore Deal">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+   
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+
+            <h2>Why Choose Skyora?</h2>
+            <p class="why-us-intro">
+                Enjoy a smoother journey with comfort, care, and confidence.
+            </p>
+
+            <div class="row g-4" id="features-container">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">✈</div>
+                        <h3>Premium Comfort</h3>
+                        <p>Relax and enjoy a comfortable flight experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3>On-Time Flights</h3>
+                        <p>We value your time and work to keep flights on schedule.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">📶</div>
+                        <h3>Wi-Fi On Board</h3>
+                        <p>Stay connected while enjoying your journey.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is ready to help when you need it.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Global Network</h3>
+                        <p>Discover destinations across the world.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧳</div>
+                        <h3>Easy Travel</h3>
+                        <p>Enjoy a simple and convenient travel experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Flexible Options</h3>
+                        <p>Choose travel options that fit your plans.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡</div>
+                        <h3>Safe Journey</h3>
+                        <p>Your safety remains an important priority.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="skyora-fleet" id="fleet" aria-labelledby="fleet-title">
+      <div class="container">
+        <div class="fleet-header">
+          <div>
+            <div class="fleet-eyebrow">OUR FLEET · MADE FOR YOUR JOURNEY</div>
+            <h1 class="fleet-title" id="fleet-title">Closer to home.<br>Ready for <span>the world.</span></h1>
+            <p class="fleet-intro">Discover the aircraft behind your next journey. From quick regional trips to long-haul adventures, SKYORA brings comfort, thoughtful design, and an Egyptian-inspired spirit to every flight.</p>
+          </div>
+          <div class="fleet-controls" aria-label="Aircraft carousel controls">
+            <button class="fleet-control" id="fleet-prev" type="button" aria-label="Previous aircraft"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+            <button class="fleet-control" id="fleet-next" type="button" aria-label="Next aircraft"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="fleet-carousel" aria-label="Aircraft carousel" aria-roledescription="carousel" tabindex="0">
+          <article class="fleet-slide is-active" aria-hidden="false">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-stars" aria-hidden="true"></i> Regional favourite</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85" alt="Passenger aircraft flying above the clouds" fetchpriority="high">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Airbus · Short &amp; medium haul</div>
+                  <h2 class="fleet-aircraft-name">Airbus A320</h2>
+                  <p class="fleet-description">A flexible single-aisle aircraft concept for popular regional routes, including sample journeys between Cairo and destinations across the Arab region.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Up to 180</strong><span>Passengers*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-layout-three-columns" aria-hidden="true"></i><strong>Single aisle</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-suitcase2" aria-hidden="true"></i><strong>Cabin space</strong><span>Carry-on storage</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Airbus A320">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-slide" aria-hidden="true">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-globe2" aria-hidden="true"></i> Long-haul comfort</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=1400&q=85" alt="Commercial passenger jet flying in a blue sky" loading="lazy">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Boeing · Long haul</div>
+                  <h2 class="fleet-aircraft-name">Boeing 787</h2>
+                  <p class="fleet-description">A wide-body aircraft concept for longer journeys, designed around a calm cabin atmosphere and passenger comfort across international routes.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Variant based</strong><span>Passenger capacity*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-arrows-angle-expand" aria-hidden="true"></i><strong>Wide body</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-globe2" aria-hidden="true"></i><strong>Long range</strong><span>International travel</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Boeing 787">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-slide" aria-hidden="true">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <div class="fleet-visual">
+                  <div class="fleet-tag"><i class="bi bi-gem" aria-hidden="true"></i> Next-generation travel</div>
+                  <img class="fleet-aircraft-image" src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1400&q=85" alt="Airliner photographed in flight" loading="lazy">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="fleet-info">
+                  <div class="fleet-maker">Airbus · Long haul</div>
+                  <h2 class="fleet-aircraft-name">Airbus A350</h2>
+                  <p class="fleet-description">A next-generation wide-body concept for premium long-distance travel, spacious surroundings, and a refined passenger experience.</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec"><i class="bi bi-people" aria-hidden="true"></i><strong>Variant based</strong><span>Passenger capacity*</span></div>
+                    <div class="fleet-spec"><i class="bi bi-stars" aria-hidden="true"></i><strong>Wide body</strong><span>Cabin type</span></div>
+                    <div class="fleet-spec"><i class="bi bi-globe-americas" aria-hidden="true"></i><strong>Long range</strong><span>International travel</span></div>
+                  </div>
+                  <div class="fleet-actions"><a class="fleet-primary-button choose-plane" href="#fleet-highlights" data-aircraft="Airbus A350">Explore aircraft <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a class="fleet-text-link" href="#fleet-highlights">Discover more <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="fleet-bottom">
+            <div class="fleet-pagination" role="group" aria-label="Choose aircraft">
+              <button class="fleet-dot is-active" type="button" data-slide="0" aria-label="Show Airbus A320" aria-pressed="true"></button>
+              <button class="fleet-dot" type="button" data-slide="1" aria-label="Show Boeing 787" aria-pressed="false"></button>
+              <button class="fleet-dot" type="button" data-slide="2" aria-label="Show Airbus A350" aria-pressed="false"></button>
+            </div>
+            <p class="fleet-bottom-note"><i class="bi bi-shield-check" aria-hidden="true"></i> Comfort and care at every altitude</p>
+            <div class="fleet-counter"><strong id="fleet-current">01</strong> / 03</div>
+          </div>
+        </div>
+
+        <div class="fleet-highlights" id="fleet-highlights">
+          <div class="fleet-highlight"><strong>Egypt-inspired</strong><span>A regional airline concept</span></div>
+          <div class="fleet-highlight"><strong>Arab region</strong><span>Sample regional destinations</span></div>
+          <div class="fleet-highlight"><strong>Passenger-first</strong><span>Comfort-led experience</span></div>
+          <div class="fleet-highlight"><strong>One journey</strong><span>Many places to discover</span></div>
+        </div>
+        <p class="fleet-disclaimer">*Aircraft capacities depend on the specific aircraft variant and cabin layout. SKYORA Airlines is a student-project concept. Aircraft and route examples are illustrative, not live schedules, confirmed operating routes, or a real booking service.</p>
+      </div>
+    </section>
+
+    <section id="travel-experience">
+ <div class="container">
+    <div class="row align-items-center g-5">
+    <div class="col-lg-5">
+        <div class="travel-content">
+          <span class="travel-label"> 06 _ TRAVEL EXPERIENCE </span>
+          <h2> YOUR JOURNEY START WITH US </h2>
+          <P class="travel-description">Experience comfort, delicious dining, world-class entertainment and more.Everything you need for a perfect journey.</P>
+          <div class="travel-services">
+            <div class="row g-4">
+                <div class="col-6">
+                    <div class="services-item">
+                    <span class="services-icon"><i class="fa-solid fa-chair"></i></span>
+                    <h3>Comfortable Seats</h3>
+                    <p>Relax in our modern and spacious cabins.</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="services-item">
+                    <span class="services-icon">  <i class="fa-solid fa-utensils"></i>  </span>
+                    <h3>Delicious Dining</h3>
+                    <p>Enjoy a variety of international cuisines.</p>
+                    </div>
+               </div>
+               <div class="col-6">
+                   <div class="services-item">
+                   <span class="services-icon">  <i  class="fa-solid fa-display"></i>  </span>
+                   <h3>In-Flight Entertainment</h3>
+                   <p>Movies, music and more at your fingertips.</p>
+                   </div>
+                </div>
+                <div class="col-6">
+                  <div class="services-item">
+                   <span class="services-icon">  <i class="fa-solid fa-wifi"></i>  </span>
+                   <h3>Wi-Fi On Board</h3>
+                   <p>Stay connected wherever you go.</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <a href="#moreCards" class="btn-view-more" id="viewMoreBtn"  data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="moreCards"> View More <i class="fa-solid fa-arrow-right"></i></a> 
+        </div>
+    </div>
+      <div class="col-lg-7">
+             <div class="row g-3">
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/aircraft_cabin_4k_3840x2176.png" alt="cabin">
+                            <figcaption><i class="fa-solid fa-chair"></i> Premium Cabin </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/gourmet-dining.png" alt="Gourmet Dining">
+                            <figcaption><i class="fa-solid fa-utensils"></i> Gourmet Dining </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/entertainment.png" alt="In-Flight Entertainment">
+                            <figcaption><i class="fa-solid fa-display"></i>In-Flight Entertainment</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/wifi.png" alt=" Wi-Fi On Board">
+                            <figcaption><i class="fa-solid fa-wifi"></i>  Wi-Fi On Board</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/airport-lounge.png" alt="Airport Lounge">
+                            <figcaption><i class="fa-solid fa-chair"></i> Airport Lounge</figcaption>
+                       </figure>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="gallery-card">
+                            <img src="Travel_Experiences/skyora_project/images/airplane_window_4k_3840x2176.png" alt="Window Views">
+                            <figcaption><i class="fa-regular fa-image"></i> Window Views</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                  <div class="collapse" id="moreCards">
+                      <div class="row g-3 mt-0">
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/spa_lounge_3840x2176.png" alt="Spa Lounge">
+                                  <figcaption><i class="fa-solid fa-spa"></i> Spa Lounge</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/priority_boarding_3840x2176.png" alt="Priority Boarding">
+                                  <figcaption><i class="fa-solid fa-plane-departure"></i> Priority Boarding</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/kids_corner_3840x2176.png" alt="Kids Corner">
+                                  <figcaption><i class="fa-solid fa-child"></i> Kids Corner</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/chauffeur_service_3840x2176.png" alt="Chauffeur Service">
+                                  <figcaption><i class="fa-solid fa-car-side"></i> Chauffeur Service</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/airline_crew_service_3840x2176.png" alt="Dedicated Crew">
+                                  <figcaption><i class="fa-solid fa-user-tie"></i> Dedicated Crew</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-6 col-md-4">
+                              <figure class="gallery-card">
+                                  <img src="Travel_Experiences/skyora_project/images/extra_baggage_3840x2176.png" alt="Extra Baggage">
+                                  <figcaption><i class="fa-solid fa-suitcase-rolling"></i> Extra Baggage</figcaption>
+                              </figure>
+                          </div>
+                         </div>
+                  </div> 
+                </div>           
+             </div>
+         </div>
+ </section>
+
+  <section id="testimonials">
+    <div class="container">
+        <div class="testimonials-header text-center">
+            <span class="testimonials-label">08 _ TESTIMONIALS</span>
+            <h2>WHAT OUR PASSENGERS SAY</h2>
+            <p>Real stories from real travelers. Hear about their experiences and why they choose SKYORA for their journeys.</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <div class="card testimonial-card mx-auto rounded-4">
+                    <div class="card-body">
+                       <div class="d-flex align-items-center gap-3 mb-3">
+                         <img src="Travel_Experiences/skyora_project/images/boy_1.png" alt="Omar Khaled" class="rounded-circle object-fit-cover" width="70" height="70">
+                          <div>
+                           <h5 class="card-title mb-0">Omar Khaled</h5>
+                           <small class="text-muted"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</small>
+                           <div class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                          </div>
+                        </div>
+                        <p class="card-text">“The flight was comfortable, the staff were very professional and the food was amazing. Everything was on time and well organized.”</p>
+                        <small class="text-muted"><i class="fa-solid fa-plane"></i> Business Class</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                   <div class="card testimonial-card mx-auto rounded-4">
+                    <div class="card-body">
+                     <div class="d-flex align-items-center gap-3 mb-3">
+                      <img src="Travel_Experiences/skyora_project/images/girl_1.png" alt="Sara Ahmed" class="rounded-circle object-fit-cover" width="70" height="70">
+                      <div>
+                       <h5 class="card-title mb-0">Sara Ahmed</h5>
+                       <small class="text-muted"><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</small>
+                      <div class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      </div>
+                     </div>
+                      <p class="card-text">“SKYORA made my trip unforgettable! The cabin was so comfortable, the entertainment options were great, and the crew was incredibly kind.”</p>
+                      <small class="text-muted"><i class="fa-solid fa-plane"></i> Economy Class</small>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card testimonial-card mx-auto rounded-4">
+                   <div class="card-body">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                     <img src="Travel_Experiences/skyora_project/images/boy_2.png" alt="Mohamed Tarek" class="rounded-circle object-fit-cover" width="70" height="70">
+                     <div>
+                      <h5 class="card-title mb-0">Mohamed Tarek</h5>
+                      <small class="text-muted"><i class="fa-solid fa-location-dot"></i> Dubai, UAE</small>
+                      <div class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                     </div>
+                    </div>
+                     <p class="card-text">“From booking to landing, everything was seamless. The SKYORA team truly cares about their passengers. I'll definitely fly with them again!”</p>
+                     <small class="text-muted"><i class="fa-solid fa-plane"></i> First Class</small>
+                   </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                 <div class="card testimonial-card mx-auto rounded-4">
+                  <div class="card-body">
+                   <div class="d-flex align-items-center gap-3 mb-3">
+                     <img src="Travel_Experiences/skyora_project/images/girl_2.png" alt="Nour Hassan" class="rounded-circle object-fit-cover" width="70" height="70">
+                     <div>
+                      <h5 class="card-title mb-0">Nour Hassan</h5>
+                      <small class="text-muted"><i class="fa-solid fa-location-dot"></i> Riyadh, KSA</small>
+                      <div class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                     </div>
+                   </div>
+                     <p class="card-text">“Boarding was quick, the Wi-Fi worked the whole flight and the lounge was a lovely place to wait. Highly recommended.”</p>
+                     <small class="text-muted"><i class="fa-solid fa-plane"></i> Business Class</small>
+                  </div>
+                 </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <section class="newsletter-section py-5">
+  <div class="container">
+    <div class="newsletter-card text-white text-center text-md-start  p-md-5">
+      <div class="row align-items-center g-4">
+        
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-2"><i class="fa-solid fa-paper-plane fa-beat-fade me-2 text-warning"></i>READY FOR YOUR NEXT JOURNEY?</h2>
+          <p class="mb-0 text-white-50">Stay updated with our latest offers, curated destinations, and exclusive travel deals.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <form id="newsletterForm" novalidate>
+            <div class="input-group newsletter-input-group">
+              <input type="email" id="newsletterEmail" class="form-control" placeholder="Enter your email" >
+
+              <button class="btn btn-dark px-4 fw-medium" type="submit">
+                  Get Travel Deals <i class="fa-solid fa-plane-departure fa-bounce ms-2"></i>
+            </button>
+            </div>
+
+            <small id="formMessage" class="d-none mt-2 d-block"></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="skyora-footer pt-5 pb-4 text-white" id="contact">
+  <div class="container">
+    
+    <div class="footer-brand mb-4">
+      <a href="#" class="d-inline-flex align-items-center text-decoration-none text-white">
+        <img src="footer-er/mini project/mini project/images/SKYORA%20Logo.jpeg" alt="SKYORA Logo" class="footer-logo">
+      </a>
+    </div>
+
+    <div class="row g-4 justify-content-between">
+
+      <nav class="col-lg-3 col-md-6 col-6" >
+        <h6 class="text-uppercase fw-bold text-white mb-3">
+          <i class="fa-solid fa-city fa-beat-fade me-1" style="color: rgb(177, 151, 252);"></i> Company
+        </h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#about" class="footer-link">About SKYORA</a></li>
+          <li class="mb-2"><a href="#fleet" class="footer-link">Fleet</a></li>
+          <li class="mb-2"><a href="#careers" class="footer-link">Careers</a></li>
+          <li class="mb-2"><a href="#press" class="footer-link">Press</a></li>
+        </ul>
+      </nav>
+
+      <nav class="col-lg-3 col-md-6 col-6">
+        <h6 class="text-uppercase fw-bold text-white mb-3">
+          <i class="fa-solid fa-plane fa-beat-fade me-1" style="color: rgb(177, 151, 252);"></i> Travel
+        </h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#destinations" class="footer-link">Destinations</a></li>
+          <li class="mb-2"><a href="#offers" class="footer-link">Offers</a></li>
+          <li class="mb-2"><a href="#experience" class="footer-link">Travel Experience</a></li>
+          <li class="mb-2"><a href="#status" class="footer-link">Flight Status</a></li>
+        </ul>
+      </nav>
+
+      <nav class="col-lg-3 col-md-6 col-6">
+        <h6 class="text-uppercase fw-bold text-white mb-3">
+          <i class="fa-solid fa-headset fa-beat-fade me-1" style="color: rgb(177, 151, 252);"></i> Support
+        </h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#help" class="footer-link">Help Center</a></li>
+          <li class="mb-2"><a href="#contact" class="footer-link">Contact Us</a></li>
+          <li class="mb-2"><a href="#baggage" class="footer-link">Baggage Info</a></li>
+          <li class="mb-2"><a href="#ticket" class="footer-link">Ticket Information</a></li>
+        </ul>
+      </nav>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <h6 class="text-uppercase fw-bold text-white mb-3">Social</h6>
+        <div class="footer-social-icons d-flex flex-wrap gap-2">
+          <a href="#" class="social-icon" ><i class="fa-brands fa-facebook fa-beat fa-sm fa-canvas-roomy" style="color: rgb(116, 192, 252);"></i></a>
+          <a href="#" class="social-icon" ><i class="fa-brands fa-x-twitter fa-beat fa-canvas-roomy" style="color: rgb(116, 192, 252);"></i></a>
+          <a href="#" class="social-icon" ><i class="fa-brands fa-instagram fa-beat fa-sm fa-canvas-roomy" style="color: rgb(224, 62, 130);"></i></a>
+          <a href="#" class="social-icon" ><i class="fa-brands fa-linkedin fa-beat fa-sm fa-canvas-roomy" style="color: rgb(0, 119, 181);"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider my-4">
+
+    <div class="text-center">
+      <small class="text-secondary">&copy; 2026 SKYORA Airlines. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="offers/Sokaryoffers/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="HOMEE/JAVASCRIPT 5/in.js"></script>
+
 </body>
 </html>
+
+
+
+
+  

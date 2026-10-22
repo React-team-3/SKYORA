@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Book Now buttons
+    
     const bookButtons = document.querySelectorAll(".offer-btn");
 
     bookButtons.forEach(function (button) {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // Countdown timer: seven days from page load
+  
     const countdownBox = document.querySelector(".countdown-box");
     const daysElement = document.getElementById("days");
     const hoursElement = document.getElementById("hours");

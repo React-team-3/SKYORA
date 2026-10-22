@@ -1,16 +1,17 @@
-nav{
+#head nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     background-color: transparent;
+    margin-top: 20px;
 }
-nav ul{
+#head nav ul{
     list-style: none;
     gap: 35px;
     display: flex;
 }
-nav ul li a{
+#head nav ul li a{
     text-decoration: none;
     color: #1b2a5c;
     font-size: 17px;
@@ -18,7 +19,7 @@ nav ul li a{
     font-weight: 500;
     padding-bottom: 5px;
 }
-nav ul li a::after{
+#head nav ul li a::after{
     content: "";
     bottom: 0;
     left: 0;
@@ -29,7 +30,7 @@ nav ul li a::after{
     background-color: #1b2a5c;
     border-radius: 3px;
 }
-nav ul li a:hover:after{
+#head nav ul li a:hover:after{
     width: 100%;
 }
 .logo{
@@ -39,7 +40,7 @@ nav ul li a:hover:after{
 }
 .logo img{
     height: 30px;
-  margin-top: -10px;
+    margin-top: -10px;
   margin-left: 45px;
 }
 .logo h3{
@@ -48,19 +49,20 @@ nav ul li a:hover:after{
     margin-left: 4px;
     color: #1b2a5c;
 }
-nav .btn1{
+#head nav .btn1{
     width: 10%;
     padding: 13px;
     border-radius: 15px;
     background-color:#1b2a5c;
     color: aliceblue;
     border-color: #1b2a5c;
-    margin-right: 30px;
+    margin-right: 40px;
      transition: 0.3s;
      font-weight: 600;
      border: 1px;
+     
 }
-nav .btn1:hover{
+#head nav .btn1:hover{
     color: aliceblue;
     background-color: rgb(0, 0, 43);
     border-color:rgb(0, 0, 43) ;
@@ -92,6 +94,7 @@ nav .btn1:hover{
     font-size: 47px;
     margin-left: 50px;
     line-height: 1.5;
+    font-weight: 700;
 }
 #hero p{
     margin-left: 54px;
@@ -144,8 +147,8 @@ nav .btn1:hover{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 120px;
-    margin-left: 110px;
+    margin-top: 140px;
+    margin-left: 120px;
 }
 #icons .hero1,
 #icons .hero2,
@@ -265,7 +268,7 @@ position: relative;
 display: none;
 }
 @media (max-width: 768px) {
-nav {
+#head nav {
    padding: 15px;
 }
 .logo {
@@ -280,7 +283,7 @@ nav {
    cursor: pointer;
    margin-left: auto;
 }
-nav ul {
+#head nav ul {
    display: none;
    position: fixed;
    top: 0;
@@ -297,7 +300,7 @@ nav ul {
 #menu:checked ~ ul {
     display: flex;
 }
-nav .btn1 {
+#head nav .btn1 {
      display: none;
 }
 #hero {
@@ -370,6 +373,8 @@ nav .btn1 {
         z-index: 1001;
     }
 }
+
+
 
 
 

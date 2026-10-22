@@ -30,12 +30,7 @@ filterSelection("all");
 
 
 // home-section:
-var hero = document.querySelector(".hero1");
-var btnWeather = document.querySelector(".btnwe");
-btnWeather.addEventListener("click", function (e) {
-  e.preventDefault();                 
-  hero.classList.toggle("weather-on"); 
-});
+document.querySelector(".btn3").onclick = () => weat.classList.toggle("show");
 
 
 

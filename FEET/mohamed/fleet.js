@@ -1,4 +1,4 @@
-/* SKYORA Airlines - Fleet Carousel */
+
 (() => {
   "use strict";
 

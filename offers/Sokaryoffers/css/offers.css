@@ -1,4 +1,4 @@
-/* ================= Special Offers ================= */
+
 
 .offers-section {
     padding: 60px 20px;
@@ -86,7 +86,7 @@
     border-color: #91A4B7;
 }
 
-/* ================= Countdown ================= */
+
 
 .countdown-box {
     background-color: #FFFFFF;
@@ -130,7 +130,7 @@
     font-size: 12px;
 }
 
-/* ================= Why Choose Skyora ================= */
+
 
 .why-us-section {
     padding: 60px 20px;
@@ -175,7 +175,7 @@
     margin-bottom: 0;
 }
 
-/* ================= Responsive Design ================= */
+
 
 @media (max-width: 768px) {
     .offers-section,

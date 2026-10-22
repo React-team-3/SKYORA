@@ -1,4 +1,3 @@
-/* SKYORA Airlines — Fleet section */
 :root {
   --fleet-ink: #172b45;
   --fleet-blue: #2385c5;
@@ -13,8 +12,17 @@
   background: #fff;
   font-family: "DM Sans", Arial, sans-serif;
 }
-.skyora-fleet * { box-sizing: border-box; }
-.skyora-fleet h1, .skyora-fleet h2, .skyora-fleet p { margin-top: 0; }
+
+.skyora-fleet * {
+  box-sizing: border-box;
+}
+
+.skyora-fleet h1,
+.skyora-fleet h2,
+.skyora-fleet p {
+  margin-top: 0;
+}
+
 .fleet-header {
   display: flex;
   align-items: end;
@@ -22,6 +30,7 @@
   gap: 28px;
   margin-bottom: 30px;
 }
+
 .fleet-eyebrow {
   display: flex;
   align-items: center;
@@ -32,7 +41,14 @@
   letter-spacing: .14em;
   text-transform: uppercase;
 }
-.fleet-eyebrow::before { width: 24px; height: 2px; background: currentColor; content: ""; }
+
+.fleet-eyebrow::before {
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
 .fleet-title {
   max-width: 700px;
   margin: 15px 0 14px !important;
@@ -42,99 +58,519 @@
   line-height: 1.13;
   letter-spacing: -.045em;
 }
-.fleet-title span { color: var(--fleet-blue); }
-.fleet-intro { max-width: 620px; margin-bottom: 0 !important; color: var(--fleet-muted); font-size: .98rem; line-height: 1.75; }
-.fleet-controls { display: flex; flex-shrink: 0; gap: 8px; padding-bottom: 2px; }
+
+.fleet-title span {
+  color: var(--fleet-blue);
+}
+
+.fleet-intro {
+  max-width: 620px;
+  margin-bottom: 0 !important;
+  color: var(--fleet-muted);
+  font-size: .98rem;
+  line-height: 1.75;
+}
+
+.fleet-controls {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  padding-bottom: 2px;
+}
+
 .fleet-control {
-  display: grid; width: 43px; height: 43px; place-items: center;
-  border: 1px solid #d7e0e8; border-radius: 50%; color: var(--fleet-ink);
-  background: #fff; font-size: 1rem; cursor: pointer; transition: background .2s, border-color .2s, color .2s;
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border: 1px solid #d7e0e8;
+  border-radius: 50%;
+  color: var(--fleet-ink);
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
 }
-.fleet-control:hover, .fleet-control:focus-visible { border-color: var(--fleet-blue); color: #fff; background: var(--fleet-blue); }
-.fleet-carousel { overflow: hidden; border: 1px solid var(--fleet-border); border-radius: 18px; background: #fff; }
-.fleet-slide { display: none; }
-.fleet-slide.is-active { display: block; animation: fleetFade .28s ease both; }
-@keyframes fleetFade { from { opacity: .45; } to { opacity: 1; } }
-.fleet-visual { position: relative; display: flex; min-height: 350px; align-items: center; padding: 24px; background: var(--fleet-soft); }
-.fleet-aircraft-image { display: block; width: 100%; height: 310px; border-radius: 10px; object-fit: cover; }
+
+.fleet-control:hover,
+.fleet-control:focus-visible {
+  border-color: var(--fleet-blue);
+  color: #fff;
+  background: var(--fleet-blue);
+}
+
+.fleet-carousel {
+  overflow: hidden;
+  border: 1px solid var(--fleet-border);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.fleet-slide {
+  display: none;
+}
+
+.fleet-slide.is-active {
+  display: block;
+  animation: fleetFade .28s ease both;
+}
+
+@keyframes fleetFade {
+  from {
+    opacity: .45;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fleet-visual {
+  position: relative;
+  display: flex;
+  min-height: 350px;
+  align-items: center;
+  padding: 24px;
+  background: var(--fleet-soft);
+}
+
+.fleet-aircraft-image {
+  display: block;
+  width: 100%;
+  height: 310px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .fleet-tag {
-  position: absolute; z-index: 2; top: 38px; left: 38px;
-  display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px;
-  border: 1px solid rgba(255,255,255,.75); border-radius: 5px;
-  color: #18314b; background: rgba(255,255,255,.94); font-size: .69rem;
-  font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  top: 38px;
+  left: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, .75);
+  border-radius: 5px;
+  color: #18314b;
+  background: rgba(255, 255, 255, .94);
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
-.fleet-tag i, .fleet-spec i, .fleet-bottom-note i { color: var(--fleet-blue); }
-.fleet-info { padding: 34px 32px 32px 22px; }
-.fleet-maker { margin-bottom: 7px; color: var(--fleet-blue); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.fleet-aircraft-name { margin: 0 0 12px !important; font-family: "Manrope", Arial, sans-serif; font-size: clamp(1.9rem, 3vw, 2.65rem); font-weight: 750; line-height: 1.15; letter-spacing: -.04em; }
-.fleet-description { max-width: 430px; margin-bottom: 0; color: var(--fleet-muted); font-size: .91rem; line-height: 1.75; }
-.fleet-specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 23px 0 25px; }
-.fleet-spec { min-height: 84px; padding: 12px 10px; border: 1px solid var(--fleet-border); border-radius: 8px; background: #fff; }
-.fleet-spec i { display: block; margin-bottom: 7px; font-size: 1rem; }
-.fleet-spec strong { display: block; color: var(--fleet-ink); font-size: .78rem; font-weight: 700; }
-.fleet-spec span { display: block; margin-top: 4px; color: var(--fleet-muted); font-size: .65rem; line-height: 1.4; }
-.fleet-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
-.fleet-primary-button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; gap: 9px; padding: 0 17px; border: 1px solid var(--fleet-blue); border-radius: 5px; color: #fff; background: var(--fleet-blue); font-size: .84rem; font-weight: 700; text-decoration: none; transition: background .2s, border-color .2s; }
-.fleet-primary-button:hover { border-color: #176b9f; color: #fff; background: #176b9f; }
-.fleet-text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--fleet-ink); font-size: .84rem; font-weight: 700; text-decoration: none; }
-.fleet-text-link:hover { color: var(--fleet-blue); }
-.fleet-bottom { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 17px 24px; border-top: 1px solid var(--fleet-border); background: #fff; }
-.fleet-pagination { display: flex; align-items: center; gap: 8px; }
-.fleet-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: #cbd5df; cursor: pointer; transition: width .2s, background .2s; }
-.fleet-dot.is-active { width: 22px; border-radius: 5px; background: var(--fleet-blue); }
-.fleet-bottom-note { margin: 0; color: var(--fleet-muted); font-size: .76rem; }
-.fleet-bottom-note i { margin-right: 6px; }
-.fleet-counter { margin: 0; color: #8793a0; font-size: .78rem; font-weight: 700; letter-spacing: .06em; }
-.fleet-counter strong { color: var(--fleet-ink); }
-.fleet-highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 26px; border: 1px solid var(--fleet-border); border-radius: 12px; background: #fff; }
-.fleet-highlight { min-height: 95px; padding: 20px 14px; text-align: center; }
-.fleet-highlight + .fleet-highlight { border-left: 1px solid var(--fleet-border); }
-.fleet-highlight strong { display: block; color: var(--fleet-ink); font-family: "Manrope", Arial, sans-serif; font-size: 1.02rem; font-weight: 750; }
-.fleet-highlight span { display: block; margin-top: 5px; color: var(--fleet-muted); font-size: .73rem; }
-.fleet-disclaimer { margin: 14px 0 0; color: #788696; font-size: .7rem; line-height: 1.6; }
-.fleet-feedback { position: fixed; z-index: 1050; right: 20px; bottom: 20px; max-width: min(420px, calc(100% - 40px)); padding: 12px 16px; border: 1px solid var(--fleet-border); border-radius: 7px; color: var(--fleet-ink); background: #fff; box-shadow: 0 6px 24px #172b451c; opacity: 0; transform: translateY(8px); pointer-events: none; transition: .2s; font-size: .85rem; }
-.fleet-feedback.is-visible { transform: translateY(0); opacity: 1; }
-.skyora-fleet button:focus-visible, .skyora-fleet a:focus-visible { outline: 2px solid var(--fleet-blue); outline-offset: 3px; }
+
+.fleet-tag i,
+.fleet-spec i,
+.fleet-bottom-note i {
+  color: var(--fleet-blue);
+}
+
+.fleet-info {
+  padding: 34px 32px 32px 22px;
+}
+
+.fleet-maker {
+  margin-bottom: 7px;
+  color: var(--fleet-blue);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.fleet-aircraft-name {
+  margin: 0 0 12px !important;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(1.9rem, 3vw, 2.65rem);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -.04em;
+}
+
+.fleet-description {
+  max-width: 430px;
+  margin-bottom: 0;
+  color: var(--fleet-muted);
+  font-size: .91rem;
+  line-height: 1.75;
+}
+
+.fleet-specs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 23px 0 25px;
+}
+
+.fleet-spec {
+  min-height: 84px;
+  padding: 12px 10px;
+  border: 1px solid var(--fleet-border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.fleet-spec i {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1rem;
+}
+
+.fleet-spec strong {
+  display: block;
+  color: var(--fleet-ink);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.fleet-spec span {
+  display: block;
+  margin-top: 4px;
+  color: var(--fleet-muted);
+  font-size: .65rem;
+  line-height: 1.4;
+}
+
+.fleet-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.fleet-primary-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 17px;
+  border: 1px solid var(--fleet-blue);
+  border-radius: 5px;
+  color: #fff;
+  background: var(--fleet-blue);
+  font-size: .84rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+
+.fleet-primary-button:hover {
+  border-color: #176b9f;
+  color: #fff;
+  background: #176b9f;
+}
+
+.fleet-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--fleet-ink);
+  font-size: .84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fleet-text-link:hover {
+  color: var(--fleet-blue);
+}
+
+.fleet-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 24px;
+  border-top: 1px solid var(--fleet-border);
+  background: #fff;
+}
+
+.fleet-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fleet-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #cbd5df;
+  cursor: pointer;
+  transition: width .2s, background .2s;
+}
+
+.fleet-dot.is-active {
+  width: 22px;
+  border-radius: 5px;
+  background: var(--fleet-blue);
+}
+
+.fleet-bottom-note {
+  margin: 0;
+  color: var(--fleet-muted);
+  font-size: .76rem;
+}
+
+.fleet-bottom-note i {
+  margin-right: 6px;
+}
+
+.fleet-counter {
+  margin: 0;
+  color: #8793a0;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.fleet-counter strong {
+  color: var(--fleet-ink);
+}
+
+.fleet-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 26px;
+  border: 1px solid var(--fleet-border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.fleet-highlight {
+  min-height: 95px;
+  padding: 20px 14px;
+  text-align: center;
+}
+
+.fleet-highlight+.fleet-highlight {
+  border-left: 1px solid var(--fleet-border);
+}
+
+.fleet-highlight strong {
+  display: block;
+  color: var(--fleet-ink);
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 750;
+}
+
+.fleet-highlight span {
+  display: block;
+  margin-top: 5px;
+  color: var(--fleet-muted);
+  font-size: .73rem;
+}
+
+.fleet-disclaimer {
+  margin: 14px 0 0;
+  color: #788696;
+  font-size: .7rem;
+  line-height: 1.6;
+}
+
+.fleet-feedback {
+  position: fixed;
+  z-index: 1050;
+  right: 20px;
+  bottom: 20px;
+  max-width: min(420px, calc(100% - 40px));
+  padding: 12px 16px;
+  border: 1px solid var(--fleet-border);
+  border-radius: 7px;
+  color: var(--fleet-ink);
+  background: #fff;
+  box-shadow: 0 6px 24px #172b451c;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: .2s;
+  font-size: .85rem;
+}
+
+.fleet-feedback.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.skyora-fleet button:focus-visible,
+.skyora-fleet a:focus-visible {
+  outline: 2px solid var(--fleet-blue);
+  outline-offset: 3px;
+}
+
 @media (max-width: 991.98px) {
-  .skyora-fleet { padding: 60px 0; }
-  .fleet-visual { min-height: 290px; padding: 20px; }
-  .fleet-aircraft-image { height: 260px; }
-  .fleet-tag { top: 32px; left: 32px; }
-  .fleet-info { padding: 28px 26px; }
+  .skyora-fleet {
+    padding: 60px 0;
+  }
+
+  .fleet-visual {
+    min-height: 290px;
+    padding: 20px;
+  }
+
+  .fleet-aircraft-image {
+    height: 260px;
+  }
+
+  .fleet-tag {
+    top: 32px;
+    left: 32px;
+  }
+
+  .fleet-info {
+    padding: 28px 26px;
+  }
 }
+
 @media (max-width: 767.98px) {
-  .skyora-fleet { padding: 48px 0; }
-  .fleet-header { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 24px; }
-  .fleet-title { font-size: clamp(2rem, 9vw, 2.8rem); }
-  .fleet-intro { font-size: .91rem; }
-  .fleet-controls { align-self: flex-end; margin-top: -2px; }
-  .fleet-carousel { border-radius: 13px; }
-  .fleet-visual { min-height: 220px; padding: 15px; }
-  .fleet-aircraft-image { height: 210px; border-radius: 7px; }
-  .fleet-tag { top: 25px; left: 25px; padding: 7px 9px; font-size: .61rem; }
-  .fleet-info { padding: 23px 18px 25px; }
-  .fleet-aircraft-name { font-size: 2rem; }
-  .fleet-specs { gap: 7px; margin: 20px 0 22px; }
-  .fleet-spec { min-height: 79px; padding: 10px 8px; }
-  .fleet-spec strong { font-size: .73rem; }
-  .fleet-spec span { font-size: .62rem; }
-  .fleet-bottom { padding: 16px; }
-  .fleet-bottom-note { display: none; }
-  .fleet-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .fleet-highlight { min-height: 88px; padding: 17px 10px; }
-  .fleet-highlight:nth-child(3) { border-left: 0; border-top: 1px solid var(--fleet-border); }
-  .fleet-highlight:nth-child(4) { border-top: 1px solid var(--fleet-border); }
+  .skyora-fleet {
+    padding: 48px 0;
+  }
+
+  .fleet-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .fleet-title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .fleet-intro {
+    font-size: .91rem;
+  }
+
+  .fleet-controls {
+    align-self: flex-end;
+    margin-top: -2px;
+  }
+
+  .fleet-carousel {
+    border-radius: 13px;
+  }
+
+  .fleet-visual {
+    min-height: 220px;
+    padding: 15px;
+  }
+
+  .fleet-aircraft-image {
+    height: 210px;
+    border-radius: 7px;
+  }
+
+  .fleet-tag {
+    top: 25px;
+    left: 25px;
+    padding: 7px 9px;
+    font-size: .61rem;
+  }
+
+  .fleet-info {
+    padding: 23px 18px 25px;
+  }
+
+  .fleet-aircraft-name {
+    font-size: 2rem;
+  }
+
+  .fleet-specs {
+    gap: 7px;
+    margin: 20px 0 22px;
+  }
+
+  .fleet-spec {
+    min-height: 79px;
+    padding: 10px 8px;
+  }
+
+  .fleet-spec strong {
+    font-size: .73rem;
+  }
+
+  .fleet-spec span {
+    font-size: .62rem;
+  }
+
+  .fleet-bottom {
+    padding: 16px;
+  }
+
+  .fleet-bottom-note {
+    display: none;
+  }
+
+  .fleet-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fleet-highlight {
+    min-height: 88px;
+    padding: 17px 10px;
+  }
+
+  .fleet-highlight:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--fleet-border);
+  }
+
+  .fleet-highlight:nth-child(4) {
+    border-top: 1px solid var(--fleet-border);
+  }
 }
+
 @media (max-width: 380px) {
-  .fleet-specs { grid-template-columns: 1fr; }
-  .fleet-spec { display: grid; min-height: auto; grid-template-columns: 24px 1fr; align-items: center; column-gap: 8px; }
-  .fleet-spec i { grid-row: span 2; margin: 0; }
-  .fleet-spec span { margin-top: 0; }
-  .fleet-actions { align-items: stretch; flex-direction: column; gap: 12px; }
-  .fleet-primary-button { width: 100%; }
-  .fleet-text-link { justify-content: center; }
+  .fleet-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .fleet-spec {
+    display: grid;
+    min-height: auto;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .fleet-spec i {
+    grid-row: span 2;
+    margin: 0;
+  }
+
+  .fleet-spec span {
+    margin-top: 0;
+  }
+
+  .fleet-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .fleet-primary-button {
+    width: 100%;
+  }
+
+  .fleet-text-link {
+    justify-content: center;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .skyora-fleet *, .skyora-fleet *::before, .skyora-fleet *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+
+  .skyora-fleet *,
+  .skyora-fleet *::before,
+  .skyora-fleet *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
 }
