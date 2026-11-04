@@ -245,6 +245,25 @@ position: relative;
     color: white;
   transform: translateY(-4px);
 }
+#flight {
+    position: absolute;
+    display: none;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    margin: 15px 0 0 50px;
+    padding: 20px 40px;
+    background: white;
+    border-radius: 15px;
+    color: #1b2a5c;
+}
+#flight.show {
+    display: flex;
+}
+#flight i {
+    font-size: 50px;
+    color: #f5a623;
+}
 #weat{
     position: absolute;
     display: none;
@@ -291,11 +310,13 @@ display: none;
    width: 250px;
    height: 100vh;
    box-sizing: border-box;
-   background: white;
    padding: 80px 25px 100px;
    margin: 0;
    flex-direction: column;
    gap: 20px;
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(15px);
+   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 #menu:checked ~ ul {
     display: flex;
