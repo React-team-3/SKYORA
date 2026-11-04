@@ -17,7 +17,6 @@
 
 .newsletter-card::after {
   content: "";
-  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
   right: -25px;
